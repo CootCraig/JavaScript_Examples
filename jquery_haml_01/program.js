@@ -1,4 +1,6 @@
 // Written by craig@coot.net @CootCraig
+// The organization of this code is suspect,
+// but the funtionality is what I want.
 jQuery(document).ready(function() {
   var builder = null,
   content_select = null,
@@ -6,6 +8,8 @@ jQuery(document).ready(function() {
   opts = [],
   update_content = null;
 
+  // Here are the 2 sets of options to be dynamically
+  // set on the select tag.
   opts[0] = [{value: 1, label: "one"},
              {value: 2, label: "two"},
              {value: 3, label: "three"}];
@@ -15,6 +19,9 @@ jQuery(document).ready(function() {
 
   // Returns an object to be used to set the options in a select tag
   // arg css_selector is used to pick the particular select tag.
+  // The selected option is tracked in a hard coded html element.
+  // This hard coded tracking would probably not make sense in
+  // a real app.  I think this is what backbone.js would be used for.
   content_select = function(css_selector) {
     var jqSelectElement = null,
     $ = jQuery,
