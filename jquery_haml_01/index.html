@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="page_title" id="head_title">Page Title Here</title>
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <script type="text/javascript" src="../vendor/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="../vendor/jquery.haml-1.3.js"></script>
+    <script type="text/javascript" src="../coot/util.js"></script>
+  </head>
+  <body>
+    <h1 class="page_title" id="body_title">Page Title Here</h1>
+    Pick an option:
+    <select id="select_content"></select>
+    <button id="switch_options" class="anchor_button">Switch the Options</button>
+    <p>Selected option is : <span id="selected_option">Never set</span></p>
+    <h3>Notes</h3>
+    <p>Trying out jQuery and jquery.haml.
+      The options are set dynamically using a jquery.haml template.
+      The selected option value is tracked.
+      The options are set with a function builder.build(option_array).
+    </p>
+    <div id="log"></div>
+    <script type="text/javascript" src="program.js"></script>
+  </body>
+</html>
