@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title id="head_title">Page Title Here</title>
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <script type="text/javascript" src="../vendor/json2.js"></script>
+    <script type="text/javascript" src="../vendor/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="../vendor/underscore-min.js"></script>
+    <script type="text/javascript" src="../vendor/backbone-min.js"></script>
+    <script type="text/javascript" src="../vendor/jquery.haml-1.3.js"></script>
+    <script type="text/javascript" src="../coot/util.js"></script>
+  </head>
+  <body>
+    <div id="body_wrapper">
+      <div id="title_wrapper">
+        <div id="title_bar">
+          <span id="body_title" class="page_title"></span>
+          <br/>
+          <span id="author">by CootCraig</span>
+        </div>
+      </div>
+      <div id="content_container">
+        <div id="main_content_select">
+          <span id="info_main_select" class="main_menu_item">Info</span>
+          <span id="nonsense_main_select" class="main_menu_item">Nonsense</span>
+        </div>
+        <div id="content">
+          <div id="info_block">
+            <div id="info_menu">
+              <span id="info_menu_template" class="sub_menu_item"></span>
+            </div>
+            <div id="info_content"></div>
+          </div>
+          <div id="nonsense_block">
+            <div id="nonsense_menu">
+              <span id="nonsense_menu_template" class="sub_menu_item"></span>
+            </div>
+            <div id="nonsense_content"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="log"></div>
+    <script type="text/javascript" src="program_json_data.js"></script>
+    <script type="text/javascript" src="program.js"></script>
+  </body>
+</html>

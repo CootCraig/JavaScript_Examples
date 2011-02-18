@@ -1,0 +1,36 @@
+body {
+    font-family: "Times New Roman",Times,serif;
+    font-size: 52px;
+}
+#author {
+    font-size: 70%;
+}
+#log {
+    font-size: 30%;
+}
+.main_menu_item {
+    font-size: 40%;
+}
+#body_wrapper {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+}
+#title_wrapper {
+    margin-right: auto;
+    margin-left: auto;
+}
+#title_bar {
+    color: black;
+    background-color: rgb(90%,90%,90%);
+    text-align: center;
+}
+#info_block {
+    display : block;
+}
+#nonsense_block {
+    display : none;
+}
