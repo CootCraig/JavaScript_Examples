@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="page_title">Page Title Here</title>
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <script type="text/javascript" src="../vendor/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="../vendor/underscore.js"></script>
+    <script type="text/javascript" src="../coot/util.js"></script>
+  </head>
+  <body>
+    <h1 class = "page_title">Page Title Here</h1>
+    2 examples of _.template
+    <script type="text/template" id="t1">
+      <h3><%= header %></h3>
+      Sed non felis sed lorem consequat euismod. Praesent dignissim
+      imperdiet odio in posuere.
+      In et augue eu tellus hendrerit rhoncus ut eu neque. Donec
+      volutpat lobortis sodales.
+      Mauris faucibus euismod ornare. Donec bibendum nulla eget purus sollicitudin accumsan.
+    </script>
+    <script type="text/template" id="t2">
+      <h3><%= header %></h3>
+      <ul>
+      <% _.each(li,function(item){ %>
+      <li><%= item %></li>
+      <% }); %>
+      </ul>
+    </script>
+    <script type="text/javascript" src="program.js"></script>
+    <div id="log"></div>
+  </body>
+</html>
