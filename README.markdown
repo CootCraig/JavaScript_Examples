@@ -5,8 +5,8 @@ Currently:
 
 * Rails 3
 * jQuery
-* sammy.js
-* backbone.js
 * underscore.js
-* jquery.haml
+* backbone.js
+* sammy.js
 
+Eventually I expect to be using node.js on the server side.
