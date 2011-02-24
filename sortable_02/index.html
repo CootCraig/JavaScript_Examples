@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title class="page_title">Page Title Here</title>
+    <link rel="stylesheet" type="text/css" href="base.css" />
+    <script type="text/javascript" src="../vendor/json2.js"></script>
+    <script type="text/javascript" src="../vendor/uuid.js"></script>
+    <script type="text/javascript" src="../vendor/underscore.js"></script>
+    <script type="text/javascript" src="../vendor/jquery-1.5.min.js"></script>
+    <script type="text/javascript" src="../vendor/jquery-ui-1.8.9.custom.js"></script>
+    <script type="text/javascript" src="../coot/util.js"></script>
+    <script type="text/javascript" src="../coot/localstorage.js"></script>
+  </head>
+  <body>
+    <h1 class = "page_title">Page Title Here</h1>
+    <button id="add_button" tabindex="1">Add a Task</button>
+    <ol id="task_list"></ol>
+    <hr />
+    <div id="log"></div>
+    <hr />
+    <script type="text/template" id="task_li_template">
+      <li class="task_li">
+        <span class="task_li_button_move_class">Move</span>
+        <button class="task_li_button_1_class" tabindex="<%= tabindex %>">Edit</button>
+        <button class="task_li_button_2_class" tabindex="<%= tabindex+1 %>">Delete</button>
+        <input type="text" class="task_li_textarea_class" size="70"
+               readonly="readonly" value="<%= text %>" />
+      </li>
+    </script>
+    <script type="text/javascript" src="app_01_name.js"></script>
+    <script type="text/javascript" src="app_02_constants.js"></script>
+    <script type="text/javascript" src="app_03_data.js"></script>
+    <script type="text/javascript" src="app_04_ui.js"></script>
+    <script type="text/javascript" src="program.js"></script>
+  </body>
+</html>
