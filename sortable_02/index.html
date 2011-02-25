@@ -12,7 +12,7 @@
     <script type="text/javascript" src="../coot/localstorage.js"></script>
   </head>
   <body>
-    <h1 class = "page_title">Page Title Here</h1>
+    <h1 class="page_title">Page Title Here</h1>
     <button id="add_button" tabindex="1">Add a Task</button>
     <ol id="task_list"></ol>
     <hr />
@@ -21,8 +21,8 @@
     <script type="text/template" id="task_li_template">
       <li class="task_li">
         <span class="task_li_button_move_class">Move</span>
-        <button class="task_li_button_1_class" tabindex="<%= tabindex %>">Edit</button>
-        <button class="task_li_button_2_class" tabindex="<%= tabindex+1 %>">Delete</button>
+        <button class="task_li_button_1_class">Edit</button>
+        <button class="task_li_button_2_class" >Delete</button>
         <input type="text" class="task_li_textarea_class" size="70"
                readonly="readonly" value="<%= text %>" />
       </li>

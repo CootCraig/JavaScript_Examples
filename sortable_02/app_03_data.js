@@ -16,6 +16,12 @@
     this[task.id] = task;
     return task;
   };
+  proto.delete_task = function(id) {
+    if (this.hasOwnProperty(id)) {
+      delete this[id];
+      this.sorted_tasks(); // priorities reset, ignore returned array
+    }
+  };
   proto.next_value = function(property) {
     var max_task = null;
     tasks = _.values(this);
